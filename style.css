@@ -1,0 +1,398 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #101010;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7ad03a;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #7ad03a;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #93f34b;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.green {
+  background: #7ad03a;
+  color: #000;
+}
+
+.green:hover {
+  background: #93f34b;
+  transform: scale(1.05);
+}
+
+.border {
+  border: 2px solid #7ad03a;
+  color: white;
+}
+
+.border:hover {
+  background: #7ad03a;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  background-color: #000;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.hero-content h1:hover {
+  color: #7ad03a;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.hero-content p:hover {
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+  padding: 60px 10%;
+  background: #1a1a1a;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.about:hover {
+  background: #181818;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.about p:hover {
+  color: #eee;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 10%;
+  background-color: #111;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-list span {
+  background: #7ad03a;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list span:hover {
+  background: #93f34b;
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 10%;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 255, 0, 0.2);
+}
+
+.card h3 {
+  color: #7ad03a;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card h3:hover {
+  color: #93f34b;
+}
+
+.card p {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.card p:hover {
+  color: #eee;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 10%;
+  background-color: #161616;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+input, textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #222;
+  color: white;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover, textarea:hover {
+  background: #2a2a2a;
+  box-shadow: 0 0 10px #7ad03a33;
+}
+
+button[type="submit"] {
+  background: #7ad03a;
+  color: #000;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #93f34b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 10px;
+  transition: background 0.3s ease;
+}
+
+footer:hover {
+  background-color: #0a0a0a;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #7ad03a;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #93f34b;
+}
+.achievements{
+    padding: 60px 10%;
+    background-color: #1a1a1a;
+    text-align: center;
+    border-radius: 10px;
+    
+
+}
+.achievements h2 {
+  color: #7ad03a;
+  margin-bottom: 20px;
+}
+.achievements p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.achievements p:hover {
+  color: #eee;
+}
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.achievements ul li {
+  background: #7f7a7a;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+/* Achieve
+ments Section */
+
+.certifications ul li {
+list-style: none;
+    margin: 10px 0;
+  background: #7f7a7a;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 5px 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.certifications {
+  padding: 60px 10%;
+  background-color: #111;
+  text-align: center;
+    border-radius: 10px;
+}
+.certifications h2 {
+  color: #7ad03a;
+  margin-bottom: 20px;
+}
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.certifications-list span {
+  background: #7ad03a;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.certifications-list span:hover {
+  background: #93f34b;
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .skills-list,
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
